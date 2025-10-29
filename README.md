@@ -377,7 +377,7 @@ Contribuições são bem-vindas! Por favor, veja [CONTRIBUTING.md](CONTRIBUTING.
 
 ## 🔒 Vulnerabilidades de Segurança
 
-Se você descobrir uma vulnerabilidade de segurança, por favor envie um e-mail para sh4rck3@example.com.
+Se você descobrir uma vulnerabilidade de segurança, por favor envie um e-mail para sh4rck3@gmail.com.
 
 ## 👨‍💻 Créditos
 
