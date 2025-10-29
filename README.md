@@ -23,11 +23,11 @@ Antes de instalar, certifique-se de que seu projeto Laravel tenha a **stack SPA 
 
 ### ✅ Requisitos Obrigatórios:
 - **PHP** 8.2 ou superior
-- **Laravel** 11.0 ou superior
-- **Laravel Jetstream** com Inertia.js
-- **Inertia.js** 1.0 ou superior
+- **Laravel** 12.0 ou superior
+- **Laravel Jetstream** 5.3 ou superior com Inertia.js
+- **Inertia.js** 2.0 ou superior
 - **Vue 3**
-- **Laravel Sanctum** (incluído no Jetstream)
+- **Laravel Sanctum** 4.0 ou superior (incluído no Jetstream)
 
 ### 📦 Stack SPA Recomendada:
 ```bash
@@ -35,7 +35,7 @@ Antes de instalar, certifique-se de que seu projeto Laravel tenha a **stack SPA 
 composer create-project laravel/laravel meu-projeto
 
 # Instalar Jetstream com Inertia + Vue
-composer require laravel/jetstream
+composer require laravel/jetstream:"^5.3"
 php artisan jetstream:install inertia
 
 # Instalar dependências frontend
@@ -45,7 +45,7 @@ npm install && npm run build
 php artisan migrate
 
 # (Opcional) Instalar Spatie Permission para controle de permissões
-composer require spatie/laravel-permission
+composer require spatie/laravel-permission:"^6.21"
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 php artisan migrate
 
@@ -396,7 +396,7 @@ The MIT License (MIT). Veja [License File](LICENSE.md) para mais informações.
 # 1. Criar projeto Laravel com Jetstream
 composer create-project laravel/laravel meu-projeto
 cd meu-projeto
-composer require laravel/jetstream
+composer require laravel/jetstream:"^5.3"
 php artisan jetstream:install inertia
 npm install && npm run build
 
@@ -404,7 +404,7 @@ npm install && npm run build
 php artisan migrate
 
 # 3. (Opcional) Instalar Spatie Permission
-composer require spatie/laravel-permission
+composer require spatie/laravel-permission:"^6.21"
 php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 php artisan migrate
 
