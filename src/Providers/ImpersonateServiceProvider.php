@@ -27,6 +27,13 @@ class ImpersonateServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Register commands
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                \Sh4rck3\LaravelImpersonateSpa\Console\InstallCommand::class,
+            ]);
+        }
+
         // Publish config
         $configPath = __DIR__ . '/../../config/impersonate-spa.php';
         $this->publishes([
